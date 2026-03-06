@@ -9,3 +9,4 @@ dist/
 # On ignore les fichiers invisibles de Python
 __pycache__/
 *.pyc
+*.db

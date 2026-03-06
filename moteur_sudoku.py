@@ -52,24 +52,18 @@ def remplir_grille_aleatoirement(grille):
             grille[ligne][colonne] = 0
     return False
 
-def generer_nouvelle_partie():
-    # Étape A : On crée une grille vide (que des 0)
+# NOUVELLE VERSION (Ce qu'il faut mettre)
+def generer_nouvelle_partie(nb_trous): # <-- On a ajouté nb_trous ici
     nouvelle_grille = [[0 for _ in range(9)] for _ in range(9)]
-    
-    # Étape B : On la remplit avec notre IA aléatoire
     remplir_grille_aleatoirement(nouvelle_grille)
     
-    # Étape C : On fait des trous pour créer le jeu
-    trous_a_faire = 45 # Difficulté moyenne (45 cases vides sur 81)
+    trous_a_faire = nb_trous # <-- On dit que trous_a_faire est égal à nb_trous
     while trous_a_faire > 0:
-        l = random.randint(0, 8) # On choisit une ligne au hasard
-        c = random.randint(0, 8) # On choisit une colonne au hasard
+        l = random.randint(0, 8) 
+        c = random.randint(0, 8) 
         if nouvelle_grille[l][c] != 0:
-            nouvelle_grille[l][c] = 0 # On évide la case
+            nouvelle_grille[l][c] = 0 
             trous_a_faire -= 1
             
     return nouvelle_grille
-
-# Au lieu de coder une grille "en dur", on lance le générateur !
-grille = generer_nouvelle_partie()
 
