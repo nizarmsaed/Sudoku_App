@@ -1,0 +1,11 @@
+# On ignore l'environnement virtuel (le bocal)
+venv/
+
+# On ignore les dossiers de compilation et le .exe
+build/
+dist/
+*.spec
+
+# On ignore les fichiers invisibles de Python
+__pycache__/
+*.pyc
