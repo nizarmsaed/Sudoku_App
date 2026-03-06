@@ -30,3 +30,7 @@ Si vous souhaitez explorer le code et lancer le jeu depuis votre terminal :
 2. Créez un environnement virtuel et installez les dépendances :
    ```bash
    pip install customtkinter
+* **⏱️ Chronomètre Dynamique :** Mesure la performance du joueur en temps réel.
+* **📊 Niveaux de Difficulté :** Choix entre Facile, Moyen et Difficile (impacte le nombre de cases vides).
+* **💾 Persistence des données :** Sauvegarde locale des meilleurs scores via une base de données SQLite.
+* **🏆 Leaderboard :** Affichage du Top 5 des meilleurs temps directement dans l'application.
